@@ -1,0 +1,148 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 65px;
+    padding: 0 3rem;
+    box-shadow: var(--bt-shadow)
+}
+
+.nav_btn {
+    display: none;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.active,
+.link,
+.logo {
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--link);
+    transition: all 0.3s ease;
+}
+
+.active:hover,
+.link:hover,
+.logo:hover {
+    color: var(--hover);
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+
+.link {
+    font-size: 1rem;
+}
+
+.active {
+    color: var(--logo);
+    font-size: larger;
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 0 2rem;
+    }
+
+    .nav_btn {
+        position: fixed;
+        right: 2rem;
+        width: 40px;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ham {
+        display: block;
+        width: 90%;
+        height: 5px;
+        background-color: var(--link);
+        border-radius: 5px;
+        transition: 0.1s ease-in;
+    }
+
+    .nav_btn.openb .ham:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .nav_btn.openb .ham:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav_btn.openb .ham:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 35%;
+    }
+
+    .open {
+        opacity: 1;
+        animation: slideIn 0.5s;
+        transition: all 1s ease-in;
+    }
+
+    .closed {
+        opacity: 0;
+        animation: slideOut 0.5s;
+        transition: all 1s ease-in-out;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 100px;
+
+    }
+}
+
+@keyframes slideIn {
+    from {
+        right: -200px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        right: 0;
+        opacity: 1;
+    }
+
+    to {
+        right: -200px;
+        opacity: 0;
+    }
+}
