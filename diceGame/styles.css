@@ -1,0 +1,72 @@
+body {
+  background-color: #393E46;
+  max-height: 100vh;
+}
+
+header {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 535px0px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 50px;
+  color: #4ECCA3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin: 15px;
+}
+
+p {
+  font-size: 20px;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 75%;
+}
+
+.button {
+  min-height: 120px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 16px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  color: #4ECCA3;
+  background: linear-gradient(217deg, rgba(48, 201, 173, 0.2), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .2), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .2), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.btn:hover {
+  font-size: 2.1rem;
+  transition: 0.3s;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+}
