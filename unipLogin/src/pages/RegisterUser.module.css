@@ -1,0 +1,113 @@
+:root {
+    --text: #B2DDF7;
+    --text-sec: #b2ddf75a;
+    --pry: #4138bf3f;
+    --sec: #3f36c2;
+}
+
+form {
+    padding-top: 25px;
+    height: 100%;
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-top: .5rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+input,
+select {
+    display: block;
+    height: 35px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+option {
+    color: var(--sec);
+    background-color: var(--pry);
+}
+
+::placeholder {
+    color: var(--text-sec);
+}
+
+.button {
+    height: 35px;
+    width: 350px;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--text);
+    color: var(--sec);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.3s;
+    color: var(--text);
+    background-color: var(--pry);
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    transition:0.53s;
+    color: var(--pry);
+}
+
+.warning {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+
+    input,
+    select {
+        width: 75%;
+    }
+
+    .button {
+        width: 75%;
+    }
+}

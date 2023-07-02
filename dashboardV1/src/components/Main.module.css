@@ -1,0 +1,5 @@
+.main {
+    display: flex;
+    flex: 6;
+    background-color: blue;
+}

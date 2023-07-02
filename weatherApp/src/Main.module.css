@@ -1,0 +1,441 @@
+:root {
+    --mg_btm: 30px;
+    --mg_btm_sm: 20px;
+    --line_cor: none;
+    --bx_shadow: 0px 0px 5px 1px rgba(47, 56, 138, 0.407);
+    --border_radius: 8px;
+    --hr: navy;
+    --light: rgba(253, 252, 255, 0.569);
+    --width-px: 800px;
+    --width-ct: 100%;
+    --width-vw: 78vw;
+    --bg: rgba(164, 173, 217, 0.316);
+    --blur: 3px;
+    --blur-2: 8px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hero_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3rem;
+    width: var(--width-px);
+    margin-top: 70px;
+    margin-bottom: var(--mg_btm);
+}
+
+.hero {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid var(--line_cor);
+    align-items: center;
+    width: var(--width-ct);
+    margin-bottom: var(--mg_btm);
+    border-radius: var(--border_radius);
+    box-shadow: var(--bx_shadow);
+    background-color: var(--bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.search>input {
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    padding-left: 10px;
+    height: 35px;
+    width: 80%;
+    border-radius: var(--border_radius);
+    background-color: var(--light);
+    margin-top: var(--mg_btm);
+}
+
+.search>input:focus {
+    border: none;
+    outline: none;
+}
+
+.search>input:hover {
+    border: none;
+    outline: 1px solid rgb(79, 39, 255);
+}
+
+.btns {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--mg_btm);
+}
+
+.btns>button {
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-top: var(--mg_btm_sm);
+    height: 35px;
+    width: 40%;
+    border: none;
+    border-radius: var(--border_radius);
+}
+
+.btns>button:first-child {
+    font-weight: bold;
+    color: rgb(253, 252, 255);
+    background-color: rgb(79, 39, 255);
+}
+
+.btns>button:first-child:hover {
+    background-color: rgb(253, 252, 255);
+    color: rgb(79, 39, 255);
+}
+
+.btns>button:last-child {
+    font-weight: bold;
+    background-color: rgb(253, 252, 255);
+    color: rgb(79, 39, 255);
+}
+
+.btns>button:last-child:hover {
+    color: rgb(253, 252, 255);
+    background-color: rgb(79, 39, 255);
+}
+
+.hero>h2 {
+    font-size: 1.8rem;
+}
+
+
+.hero_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: var(--width-ct);
+    padding: 4rem 0;
+    box-shadow: var(--bx_shadow);
+    border-radius: var(--border_radius);
+    background-color: var(--bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.highlight {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 14rem;
+    margin-bottom: var(--mg_btm_sm);
+    font-size: 2.5rem;
+}
+
+.info {
+    border-left: var(--hr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    width: 50%;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.info>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+}
+
+.other {
+    width: var(--width-px);
+    padding: 0 3rem;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: var(--width-ct);
+    margin-bottom: var(--mg_btm);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 20px 0;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.card::-webkit-scrollbar {
+    background: transparent;
+}
+
+.card::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px 1px rgba(255, 255, 255, 0.228);
+    border-radius: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.card::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--bg);
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--line_cor);
+    border-radius: var(--border_radius);
+    box-shadow: var(--bx_shadow);
+    padding: 0.6rem;
+    width: 150px;
+    height: 180px;
+    background-color: var(--bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.circle {
+    width: 8rem;
+    aspect-ratio: 1 /1;
+}
+
+.aside2 {
+    width: var(--width-ct);
+    margin-bottom: 70px;
+}
+
+.fcast {
+    margin-top: 20px;
+    margin-bottom: var(--mg_btm);
+}
+
+.fcast_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    margin-bottom: 20px;
+    border-radius: var(--border_radius);
+    box-shadow: var(--bx_shadow);
+    padding: 0.6rem;
+    background-color: var(--bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.snaps_inline {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1.5rem;
+}
+
+.snaps_inline>* {
+    scroll-snap-align: start;
+}
+
+.error {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: red;
+    animation-delay: 1s;
+    animation: shake 0.25s;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 2rem;
+    letter-spacing: -2px;
+    font-weight: bolder;
+}
+
+
+.info h6 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+h2>p {
+    margin-top: -20px;
+    margin-left: 9px;
+    font-size: 2rem;
+}
+
+.highlight {
+    font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        letter-spacing: -1px;
+        font-weight: bolder;
+    }
+
+
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    .info h6 {
+        font-size: 0.8rem;
+    }
+
+    h2>p {
+        margin-top: -10px;
+        margin-left: 5px;
+        font-size: 1.3rem;
+    }
+
+    .highlight {
+        font-size: 2rem;
+    }
+
+    .hero_wrapper {
+        width: 100%;
+    }
+
+    .search {
+        width: 78vw;
+    }
+
+    .btns>button:first-child {
+        width: 35%;
+    }
+
+    .btns>button:last-child {
+        width: 57%;
+    }
+
+    .hero_aside {
+        width: 78vw;
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 30px 0;
+    }
+
+    .info {
+        padding: 0px;
+    }
+
+    .info>* {
+        min-width: 70px;
+    }
+
+    .card {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1.5rem;
+        justify-content: flex-start;
+        box-shadow: var(--bx_shadow);
+        border-radius: var(--border_radius);
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+
+    .card_info {
+        border: 1px solid var(--line_cor);
+    }
+
+    .other {
+        width: var(--width-vw);
+        padding: 0;
+    }
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

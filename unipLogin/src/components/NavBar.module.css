@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background: #B2DDF7;
+    transition: 0.25s linear;
+    position: fixed;
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+}
+
+.links a {
+    color: #3f36c2;
+}
+
+.links a:hover {
+    color: #0005a4;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 10%;
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

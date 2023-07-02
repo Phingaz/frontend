@@ -1,0 +1,28 @@
+:root {
+    --mg-bt: 20px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 100vh;
+    padding: 10px;
+}
+
+.top,.container {
+    margin-bottom: var(--mg-bt);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    
+}
+
+.wrapper > li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}

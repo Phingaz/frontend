@@ -1,0 +1,17 @@
+*,*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: #B2DDF7;
+  font-family: "Euclid Circular A", "Poppins";
+  height: 100vh;
+}
+
+p {
+  color: #B2DDF7;
+}

@@ -1,0 +1,99 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    min-height: 100vh;
+}
+
+#header.fixed-header {
+    display: block;
+    margin: 0 auto;
+    color: #eee;
+}
+
+.flex-container.products {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.554);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1rem;
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.554);
+}
+
+#btns {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-success.add {
+    background-color: #5e84d677;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+
+.btn.btn-success:hover {
+    background-color: #eee;
+    color: #5e84d6;
+    margin-left: 1rem;
+}
+
+.btn.btn-success {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    margin-left: 1rem;
+    border: 1px solid #5e84d6;
+}
+
+.btn.btn-success:hover {
+    background-color: #eee;
+    color: #5e84d6;
+    margin-left: 1rem;
+}
+
+.items {
+    margin: 1rem;
+    width: 200px;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid #5e84d6;
+}
+
+.delete-checkbox {
+    cursor: pointer;
+}
+
+#cards {
+    text-align: center;
+    background-color: #091f4e54;
+    color: #eee;
+    border: 1px solid rgba(32, 32, 208, 0.469);
+}
+
+footer {
+    text-align: center;
+    font-size: .8rem;
+    color: #eee;
+}
