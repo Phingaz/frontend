@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 :root {
-  --bg: #17183B;
+  --bg: #00072d;
   --main-txt: #FFF4E9;
   --logo: rgb(150, 255, 174);
-  --hover: #4edfff;
-  --link: rgb(213, 198, 255);
+  --hover: #0066ff;
+  --link: #E3D7FF;
+  --bd-radius: 8px;
   --bt-shadow: 0px 0px 5px black;
 }
 
@@ -14,7 +17,7 @@
 }
 
 body {
-  font-family: 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg);

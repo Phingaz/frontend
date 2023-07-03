@@ -1,0 +1,8 @@
+:root{
+    --mg-top: 30px;
+}
+
+.home {
+    margin-top: var(--mg-top);
+    /* min-height: 200vh; */
+}
