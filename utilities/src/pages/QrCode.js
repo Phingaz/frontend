@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Wrapper from "../components/Wrapper"
 import styled from "./Qrcode.module.css"
 
@@ -7,14 +7,27 @@ export const QrCode = () => {
 
   const [qrcode, setQrcode] = useState()
 
-  fetch(()=> {
+  const [message, setMessage] = useState({
+    fetch: true,
+    loading: true
+  })
+
+  useEffect(() => {
+    setMessage({
+      loading: true,
+    })
     fetch(`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=http://localhost:3000/qrcode`)
       .then(res => res.blob())
       .then(blob => {
         const genImage = URL.createObjectURL(blob)
         setQrcode(genImage)
+        setMessage({
+          loading: false,
+          message: ""
+        })
       })
   }, [])
+
 
 
   const handleSubmit = (e) => {
@@ -25,6 +38,11 @@ export const QrCode = () => {
       .then(blob => {
         const genImage = URL.createObjectURL(blob)
         setQrcode(genImage)
+        setMessage({
+          loading: false,
+          fetch: true,
+          message: "QrCode Genetared Succesfully"
+        })
       })
   }
 
@@ -45,11 +63,26 @@ export const QrCode = () => {
             </label>
           </div>
           <button>Generate QrCode</button>
+
+          {
+            message.loading === false && message.fetch === true
+            &&
+            <p>{message.message}</p>
+          }
+
         </form>
-          <img 
-            src={qrcode}
-            alt="qrcode"
-          />
+        <div className={styled.img}>
+          {
+            message.loading === true
+              ?
+              <p>loading...</p>
+              :
+              <img
+                src={qrcode}
+                alt="qrcode"
+              />
+          }
+        </div>
       </div>
     </Wrapper>
   )

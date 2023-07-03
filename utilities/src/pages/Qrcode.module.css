@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: var(--mg-top);
+    min-height: calc(100% - 67px);
+    height: 100%;
+    margin-top: 80px;
 }
 
 .wrapper {
@@ -80,8 +82,38 @@
     background-color: var(--main-txt);
 }
 
+.qrcode .img {
+    display: grid;
+    place-content: center;
+    min-width: 300px;
+    aspect-ratio: 1 / 1;
+}
+
+.qrcode p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: green;
+    animation: fadeIn 1s;
+    transition: all 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 700px) {
     .container {
         width: 84vw;
+    }
+
+    .container label {
+        font-size: 0.8rem;
     }
 }

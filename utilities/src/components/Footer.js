@@ -1,15 +1,16 @@
-import React from 'react'
-
 export const Footer = () => {
+
   const style = {
     padding: "1rem",
     display: "grid",
     placeContent: "center",
-    // position: "sticky",
-    // bottom: "0"
+    position: "absolute",
+    bottom: "0",
+    fontSize: "0.7rem",
+    width: "100%",
   }
 
   return (
-    <div style={style}>Footer</div>
+    <div style={style}>Phingaz © 2023</div>
   )
 }

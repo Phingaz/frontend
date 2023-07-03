@@ -23,3 +23,7 @@ body {
   background-color: var(--bg);
   color: var(--main-txt);
 }
+
+#root {
+    min-height: 100vh;
+}
