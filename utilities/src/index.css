@@ -24,7 +24,6 @@ body {
   color: var(--main-txt);
 }
 
-#root {
-  height: 100vh;
-  overflow: hidden;
+.App {
+  height: 100svh;
 }

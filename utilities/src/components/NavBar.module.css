@@ -61,6 +61,18 @@ li {
         padding: 0 2rem;
     }
 
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: -100px;
+        left: 0;
+        position: absolute;
+        backdrop-filter: blur(5px);
+        background-color: var(--bg);
+    }
+
     .nav_btn {
         position: fixed;
         right: 2rem;
@@ -97,58 +109,50 @@ li {
         transform: translateY(-11px) rotate(-45deg);
     }
 
-    .nav {
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 39%;
-        background-color: var(--bg);
-        backdrop-filter: blur(5px);
-    }
-
     .open {
         opacity: 1;
-        animation: slideIn 0.5s;
-        transition: all 1s ease-in;
+        animation: slideDown 0.5s;
+        animation-fill-mode: forwards;
+        transition: all 0.3s ease-in;
+        z-index: 100;
     }
 
     .closed {
         opacity: 0;
-        animation: slideOut 0.5s;
-        transition: all 1s ease-in-out;
+        animation: slideUp 0.5s;
+        animation-fill-mode: forwards;
+        transition: all 0.3s ease-in-out;
+        z-index: -100;
     }
 
     .nav_links {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        margin-top: 100px;
-
+        padding: 1.5rem 0;
     }
 }
 
-@keyframes slideIn {
+@keyframes slideDown {
     from {
-        right: -200px;
         opacity: 0;
+        top: -100px;
     }
 
     to {
-        right: 0;
         opacity: 1;
+        top: 65px;
     }
 }
 
-@keyframes slideOut {
+@keyframes slideUp {
     from {
-        right: 0;
         opacity: 1;
+        top: 65px;
     }
 
     to {
-        right: -200px;
         opacity: 0;
+        top: -100px;
     }
 }

@@ -92,6 +92,7 @@
 }
 
 .qrcode p {
+    text-align: center;
     font-size: 0.7rem;
     font-weight: bold;
     margin-top: 10px;
