@@ -1,0 +1,148 @@
+
+.rug {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rug button {
+    margin-top: 17px;
+}
+
+.rug main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rug button,
+.about,
+.login,
+.address,
+.rug main img {
+    margin-bottom: var(--rug-mg-bt);
+}
+
+.about img {
+    border: 5px double var(--link);
+    border-radius: var(--bd-radius);
+}
+
+.name {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3px;
+}
+
+.age {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fone {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about,
+.login,
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: var(--card-wd);
+    padding: 1rem 0;
+    border-radius: var(--bd-radius);
+    border: 1px solid var(--card);
+    background-color: var(--card);
+    box-shadow: var(--bt-shadow);
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.state {
+    display: flex;
+    gap: 1rem;
+}
+
+.zip {
+    display: grid;
+    place-items: center;
+}
+
+.rug button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-txt);
+    background-color: var(--hover);
+    border: none;
+    border-radius: var(--bd-radius);
+    padding: 10px;
+    transition: 0.3s all ease;
+}
+
+.rug button:hover {
+    color: var(--hover);
+    background-color: var(--main-txt);
+}
+
+.rug p {
+    font-size: 0.7rem;
+}
+
+.info {
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+    color: var(--link);
+}
+
+.info h3 {
+    font-size: 1.7rem;
+    color: inherit;
+}
+
+@media (min-width: 767px) {
+
+    .rug p {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 1.2rem;
+    }
+
+    .info h3 {
+        font-size: 2.5rem;
+    }
+
+    .about,
+    .login,
+    .address {
+        width: 450px;
+    }
+
+    .rug button {
+        margin-top: 50px;
+    }
+
+        .rug button,
+        .about,
+        .login,
+        .address,
+        .rug main img {
+            margin-bottom: 30px;
+        }
+}

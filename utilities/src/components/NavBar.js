@@ -23,12 +23,27 @@ export const NavBar = () => {
       </h1>
       <nav className={`${styled.nav} ${sh ? styled.open : styled.closed}`}>
         <ul className={styled.nav_links}>
-          <li><NavLink
-            className={({ isActive }) => isActive ? styled.active : styled.link}
-            to="/qrcode">QrCode</NavLink></li>
-          <li><NavLink
-            className={({ isActive }) => isActive ? styled.active : styled.link}
-            to="/linkshortner">Link Shortner</NavLink></li>
+          <li>
+            <NavLink
+              className={({ isActive }) => isActive ? styled.active : styled.link}
+              to="/qrcode">
+              QrCode
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => isActive ? styled.active : styled.link}
+              to="/linkshortner">
+              Link Shortner
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => isActive ? styled.active : styled.link}
+              to="/rug">
+              Random User Generator
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

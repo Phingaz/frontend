@@ -103,14 +103,26 @@
     padding: 1rem;
     background-color: var(--card);
     border-radius: var(--bd-radius);
-    margin-bottom: 10px;
+    margin-bottom: var(--qr-mg-bt);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s;
+    box-shadow: var(--bt-shadow);
 }
 
 .link_items {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 35px;
+    min-height: 30px;
+}
+
+.link_items p {
+    word-wrap: break-word;
+    width: 90%;
+}
+
+.link_items i {
+    cursor: pointer;
 }
 
 .error,.success {
@@ -124,7 +136,7 @@
     color: green;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
     .linkShortner h2 {
         margin: 50px 0 var(--qr-mg-bt) 0;
@@ -140,5 +152,15 @@
     
     .container label {
         font-size: 0.8rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
     }
 }
