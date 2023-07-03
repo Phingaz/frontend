@@ -4,10 +4,9 @@ export const Footer = () => {
     padding: "1rem",
     display: "grid",
     placeContent: "center",
-    position: "absolute",
+    position: "sticky",
     bottom: "0",
     fontSize: "0.7rem",
-    width: "100%",
   }
 
   return (

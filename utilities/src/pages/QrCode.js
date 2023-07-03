@@ -45,6 +45,7 @@ export const QrCode = () => {
           fetch: true,
           message: "QrCode Genetared Succesfully"
         })
+        input.current.value = ""
       })
   }
 
@@ -55,6 +56,7 @@ export const QrCode = () => {
   return (
     <Wrapper>
       <div className={styled.qrcode} >
+        <h2>QrCode Generator</h2>
         <form className={styled.wrapper} onSubmit={handleSubmit}>
           <div className={styled.container}>
             <input

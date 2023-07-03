@@ -19,7 +19,7 @@ export const NavBar = () => {
       <h1>
         <NavLink
           className={({ isActive }) => isActive ? styled.active : styled.logo}
-          to="/">logo</NavLink>
+          to="/">Utility App</NavLink>
       </h1>
       <nav className={`${styled.nav} ${sh ? styled.open : styled.closed}`}>
         <ul className={styled.nav_links}>

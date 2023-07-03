@@ -6,8 +6,9 @@
   --logo: rgb(150, 255, 174);
   --hover: #0066ff;
   --link: #E3D7FF;
+  --card: #130c4e;
   --bd-radius: 8px;
-  --bt-shadow: 0px 0px 5px black;
+  --bt-shadow: 0px 0px 5px #E3d7ff;
 }
 
 * {

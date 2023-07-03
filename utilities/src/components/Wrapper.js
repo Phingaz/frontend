@@ -1,5 +1,5 @@
 import {NavBar} from "./NavBar"
-import { Footer } from "./Footer"
+// import { Footer } from "./Footer"
 
 function Wrapper(props) {
 
@@ -7,7 +7,7 @@ function Wrapper(props) {
         <>
             <NavBar />
             {props.children}
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

@@ -1,8 +1,13 @@
-:root {
-    --qr-mg-bt: 20px;
+
+.linkShortner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100% - 67px); */
 }
 
-.qrcode h2 {
+.linkShortner h2{
     text-align: center;
     margin: 100px 0 var(--qr-mg-bt) 0;
 }
@@ -64,7 +69,7 @@
     transition: all 0.3s ease;
 }
 
-.qrcode button {
+.linkShortner button {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
@@ -76,45 +81,52 @@
     transition: 0.3s all ease;
 }
 
-.qrcode button:hover {
+.linkShortner button:hover {
     color: var(--hover);
     background-color: var(--main-txt);
 }
 
-.qrcode .img {
+.result {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.qrcode p {
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: bold;
-    margin-top: 10px;
-    color: green;
-    animation: fadeIn 1s;
-    transition: all 0.3s ease-in;
-}
-
-.img img {
+    gap: 1rem;
+    width: 700px;
     margin-bottom: var(--qr-mg-bt);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--card);
+    border-radius: var(--bd-radius);
+    margin-bottom: 10px;
+}
 
-    to {
-        opacity: 1;
-    }
+.link_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 35px;
+}
+
+.error,.success {
+    color: red;
+    padding: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
 }
 
 @media (max-width: 700px) {
 
-    .qrcode h2 {
+    .linkShortner h2 {
         margin: 50px 0 var(--qr-mg-bt) 0;
     }
 
@@ -122,6 +134,10 @@
         width: 84vw;
     }
 
+    .result {
+        width: 84vw;
+    }
+    
     .container label {
         font-size: 0.8rem;
     }
