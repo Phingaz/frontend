@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 import Wrapper from "../components/Wrapper"
 import styled from "./Qrcode.module.css"
+import { saveAs } from 'file-saver'
+
 
 export const QrCode = () => {
   const input = useRef()
@@ -46,6 +48,10 @@ export const QrCode = () => {
       })
   }
 
+  const downloadImg = () => {
+    saveAs(qrcode, 'qrCode.jpg')
+  }
+
   return (
     <Wrapper>
       <div className={styled.qrcode} >
@@ -82,6 +88,7 @@ export const QrCode = () => {
                 alt="qrcode"
               />
           }
+          <button onClick={downloadImg}>Download</button>
         </div>
       </div>
     </Wrapper>
