@@ -41,6 +41,7 @@
 .container input:valid+label {
     background-color: var(--bg);
     top: -8px;
+    font-size: 0.7rem;
 }
 
 .input_container input:valid,
