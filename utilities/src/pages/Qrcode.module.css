@@ -1,11 +1,13 @@
+:root {
+    --qr-mg-bt: 20px;
+}
+
 .qrcode {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: calc(100% - 67px);
-    height: 100%;
-    margin-top: 80px;
+    height: calc(100% - 67px);
 }
 
 .wrapper {
@@ -13,7 +15,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: var(--mg-top);
+    margin-bottom: var(--qr-mg-bt);
 }
 
 .container {
@@ -25,7 +27,7 @@
     position: relative;
     border-radius: var(--bd-radius);
     letter-spacing: 0.8px;
-    margin-bottom: 20px;
+    margin-bottom: var(--qr-mg-bt);
 }
 
 .container input {
@@ -99,13 +101,7 @@
 }
 
 .img img {
-    margin-bottom: 30px;
-}
-
-@media (max-width: 767px) {
-    .img img {
-        margin-bottom: 1.5rem;
-    }
+    margin-bottom: var(--qr-mg-bt);
 }
 
 @keyframes fadeIn {
