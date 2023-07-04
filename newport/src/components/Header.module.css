@@ -98,8 +98,6 @@ h1 a:hover {
         animation-fill-mode: forwards;
         transition: all 0.3s ease-in;
         z-index: 100;
-        background-color: transparent;
-        backdrop-filter: blur(5px);
     }
 
     .closed {
@@ -124,8 +122,12 @@ h1 a:hover {
         }
 
         to {
-            top: 66px;
+            top: 63px;
             opacity: 1;
+
+        background-color: var(--hover);
+            backdrop-filter: blur(5px);
+            border: 1px solid green;
         }
     }
 
