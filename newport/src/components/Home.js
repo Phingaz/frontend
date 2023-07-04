@@ -1,7 +1,7 @@
 import styled from "./Home.module.css"
 import Typewriter from 'typewriter-effect';
 import { HashLink } from 'react-router-hash-link';
-import { Reveal } from "./Reveal";
+import { Reveal,FadeIn } from "./Reveal";
 
 export const Home = () => {
     return (
@@ -36,7 +36,7 @@ export const Home = () => {
                 </Reveal>
             </div>
 
-            <Reveal delay={1}>
+            <FadeIn delay={1}>
                 <div className={styled.icons}>
                     <a className={styled.icons_item} href="https://www.linkedin.com/in/piinoya/" target="blank">
                         <i className="fa-brands fa-linkedin-in"></i>
@@ -49,7 +49,7 @@ export const Home = () => {
                         <i className="fa-solid fa-cloud-arrow-down"></i>
                     </a>
                 </div>
-            </Reveal>
+            </FadeIn>
         </div>
     )
 }
