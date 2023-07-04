@@ -1,0 +1,141 @@
+.home {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.name h1 {
+    letter-spacing: 5px;
+    font-size: 6rem;
+}
+
+.highlight {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(159,
+                160,
+                161, 0.9));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.accent {
+    font-family: 'Varela Round', sans-serif;
+    color: var(--links);
+}
+
+.accent span {
+    color: var(--hover);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    min-width: 100%;
+    min-height: 70px;
+    margin-bottom: 20px;
+    padding: 1rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1.1px;
+}
+
+.info p {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--links);
+    font-size: 5rem;
+}
+
+.home button {
+    font-weight: bolder;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--links);
+    border: 1px solid var(--hover-b);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.home button:hover {
+    animation: none;
+    color: var(--hover-b);
+    border: 1px solid var(--links);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    min-height: 70px;
+}
+
+.icons_item {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background-color: var(--hover);
+    font-size: 1.2rem;
+    color: var(--links);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.icons_item:hover {
+    color: var(--hover);
+    background-color: var(--links);
+    transform: scale(1.1);
+
+}
+
+@media (max-width: 767px) {
+    .name {
+        width: 90vw;
+    }
+
+    .name h1 {
+        font-size: 2.9rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
