@@ -118,4 +118,24 @@ const courses = [
         course: "Web Development with HTML, CSS and Javascript"
     },
 ]
-export { techs, courses }
+
+const workflows = [
+    {
+        id: 1,
+        course: " Mobile - First, Responsive Design"
+    },
+    {
+        id: 2,
+        course: "Cross Browser Testing & Debugging"
+    },
+    {
+        id: 3,
+        course: "Cross Functional Teams"
+    },
+    {
+        id: 4,
+        course: "Agile Development & Scrum"
+    },
+]
+
+export { techs, courses, workflows }

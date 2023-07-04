@@ -54,6 +54,7 @@ h1 a:hover {
         left: 0;
         width: 100%;
         z-index: -500;
+        visibility: none;
     }
 
     .nav_btn {
@@ -98,6 +99,7 @@ h1 a:hover {
         animation-fill-mode: forwards;
         transition: all 0.3s ease-in;
         z-index: 100;
+        visibility: visible;
     }
 
     .closed {
@@ -106,6 +108,7 @@ h1 a:hover {
         animation-fill-mode: forwards;
         transition: all 0.3s ease-in-out;
         z-index: -100;
+        visibility: none;
     }
 
     .nav_links {

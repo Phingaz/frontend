@@ -1,6 +1,7 @@
 import styled from "./About.module.css"
 import { techs, courses } from "./logos"
-import { /*Reveal,*/ FadeIn, SlideLeft, SlideRight } from "./Reveal"
+import { FadeIn, SlideLeft, SlideRight } from "./Reveal"
+import { workflows } from "./logos"
 
 export const About = () => {
     return (
@@ -52,7 +53,7 @@ export const About = () => {
                     <aside className={styled.aside_logo}>
                         <SlideRight delay={0.6}>
                             <div className={styled.mg_bt}>
-                                <h2>Tecnologies i have used</h2>
+                                <h2>Some tecnologies I have used</h2>
                                 <div className={styled.tech} >
                                     {
                                         techs.map(el =>
@@ -62,12 +63,23 @@ export const About = () => {
                             </div>
                         </SlideRight>
                         <SlideRight delay={0.7}>
-                            <div>
-                                <h2>Some courses i have taken</h2>
+                            <div className={styled.mg_bt}>
+                                <h2>Some courses I have taken</h2>
                                 <div className={styled.tech} >
                                     {
                                         courses.map(el =>
                                             <span className={styled.techTexts} key={el.id}>{el.course}</span>)
+                                    }
+                                </div>
+                            </div>
+                        </SlideRight>
+                        <SlideRight delay={0.7}>
+                            <div className={styled.mg_bt}>
+                                <h2>My Workflow</h2>
+                                <div className={styled.tech} >
+                                    {
+                                        workflows.map(el =>
+                                            <div className={styled.techTexts} key={el.id}>{el.course}</div>)
                                     }
                                 </div>
                             </div>

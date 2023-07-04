@@ -18,12 +18,15 @@ const Reveal = (props) => {
         <div ref={ref}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, y: 75 },
+                    hidden: { opacity: 0, y: 13 },
                     visible: { opacity: 1, y: 0 },
                 }}
                 initial="hidden"
                 animate={mainControl}
-                transition={{ duration: 0.5, delay: props.delay }}
+                transition={{
+                    duration: props.duration ? props.duration : 0.5,
+                    delay: props.delay
+                }}
             >
                 {props.children}
             </motion.div>
@@ -47,12 +50,14 @@ const FadeIn = (props) => {
         <div ref={ref}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0,},
-                    visible: { opacity: 1,},
+                    hidden: { opacity: 0, },
+                    visible: { opacity: 1, },
                 }}
                 initial="hidden"
                 animate={mainControl}
-                transition={{ duration: 0.5, delay: props.delay }}
+                transition={{
+                    duration: props.duration ? props.duration : 0.5, delay: props.delay
+                }}
             >
                 {props.children}
             </motion.div>
@@ -76,8 +81,8 @@ const SlideLeft = (props) => {
         <div ref={ref}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, x: -75},
-                    visible: { opacity: 1, x: 0},
+                    hidden: { opacity: 0, x: -13 },
+                    visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
                 animate={mainControl}
@@ -105,8 +110,8 @@ const SlideRight = (props) => {
         <div ref={ref}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, x: 75},
-                    visible: { opacity: 1, x: 0},
+                    hidden: { opacity: 0, x: 13 },
+                    visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
                 animate={mainControl}
@@ -118,4 +123,4 @@ const SlideRight = (props) => {
     )
 }
 
-export {Reveal, FadeIn, SlideLeft, SlideRight}
+export { Reveal, FadeIn, SlideLeft, SlideRight }
