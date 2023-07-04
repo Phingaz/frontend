@@ -42,6 +42,13 @@ export const Header = () => {
                     <li onClick={shoNa}>
                         <HashLink
                             smooth
+                            to="#work">
+                            Experience
+                        </HashLink>
+                    </li>
+                    <li onClick={shoNa}>
+                        <HashLink
+                            smooth
                             to="/#contact">
                             Contact Me
                         </HashLink>
