@@ -29,6 +29,50 @@
     width: 100%;
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 4px;
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 20px;
+    border: 1px solid var(--hover);
+}
+
+.head,.role {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.work h3 {
+    color: var(--hover-b);
+}
+
+.work h4 {
+    color: var(--hover-b);
+}
+
+.work p {
+   text-align: justify;
+    line-height: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.stack {
+   display: flex;
+   gap: 10px;
+}
+
+.stack span {
+    padding: 0 4px;
+    background-color: var(--hover);
+    color: var(--links);
+}
+
 @media (max-width: 767px) {
     .container {
         width: 90vw;
