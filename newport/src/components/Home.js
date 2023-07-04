@@ -38,14 +38,14 @@ export const Home = () => {
 
             <Reveal delay={1}>
                 <div className={styled.icons}>
-                    <a className={styled.icons_item} href="https://www.linkedin.com/in/piinoya/">
+                    <a className={styled.icons_item} href="https://www.linkedin.com/in/piinoya/" target="blank">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a className={styled.icons_item} href="https://piicv.netlify.app">
+                    <a className={styled.icons_item} href="https://piicv.netlify.app" target="blank">
                         <i className="fa-solid fa-briefcase"></i ></a>
-                    <a className={styled.icons_item} href="https://github.com/Phingaz?tab=repositories">
+                    <a className={styled.icons_item} href="https://github.com/Phingaz?tab=repositories" target="blank">
                         <i className="fab fa-github"></i></a>
-                    <a className={styled.icons_item} href="https://drive.google.com/open?id=15eY5MRMyCgX72kLKZ5XGpcOY7r0K_pMt&authuser=piinoya%40gmail.com&usp=drive_fs">
+                    <a className={styled.icons_item} href="https://drive.google.com/open?id=15eY5MRMyCgX72kLKZ5XGpcOY7r0K_pMt&authuser=piinoya%40gmail.com&usp=drive_fs" target="blank">
                         <i className="fa-solid fa-cloud-arrow-down"></i>
                     </a>
                 </div>

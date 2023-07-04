@@ -12,7 +12,6 @@
     flex-direction: column;
     font-family: 'Varela Round', sans-serif;
     position: relative;
-    z-index: -1;
 }
 
 .name {
