@@ -32,19 +32,21 @@ li {
     list-style: none;
 }
 
-li a,h1 a {
+li a,
+h1 a {
     color: var(--links);
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: bold;
 }
 
-li a:hover,h1 a:hover {
+li a:hover,
+h1 a:hover {
     cursor: pointer;
     color: var(--hover);
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
     .nav {
         position: absolute;
         top: -65px;
@@ -90,11 +92,14 @@ li a:hover,h1 a:hover {
     }
 
     .open {
+        display: block;
         opacity: 1;
         animation: slideDown 0.5s;
         animation-fill-mode: forwards;
         transition: all 0.3s ease-in;
         z-index: 100;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
     }
 
     .closed {
@@ -117,6 +122,7 @@ li a:hover,h1 a:hover {
             top: -65px;
             opacity: 0;
         }
+
         to {
             top: 66px;
             opacity: 1;
@@ -128,6 +134,7 @@ li a:hover,h1 a:hover {
             top: 66px;
             opacity: 1;
         }
+
         to {
             top: -65px;
             opacity: 0;

@@ -14,7 +14,9 @@ export const Home = () => {
                     <h1 className={styled.accent}>PROSPER<span>.</span></h1>
                 </Reveal>
                 <div className={styled.info}>
-                    <p>I </p><Typewriter
+                    <Reveal delay={0.6}>
+                        <p>I </p>
+                    </Reveal><Typewriter
                         options={{
                             strings: ['am a frontend developer', 'design beautiful things for the web', 'am available for jobs, freelance and contributions, feel free to contact me 😉.'],
                             pauseFor: 3000,
