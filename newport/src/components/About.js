@@ -1,6 +1,6 @@
 import styled from "./About.module.css"
 import { techs, courses } from "./logos"
-import { Reveal, FadeIn, SlideLeft, SlideRight } from "./Reveal"
+import { /*Reveal,*/ FadeIn, SlideLeft, SlideRight } from "./Reveal"
 
 export const About = () => {
     return (
