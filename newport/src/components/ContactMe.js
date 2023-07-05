@@ -15,7 +15,7 @@ export const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const formInput = { email: input.current.value }
-    fetch(`http://localhost:5000/api/v1/email`, {
+    fetch(`https://centraldb.onrender.com/api/v1/email`, {
       method: "POST",
       body: JSON.stringify(formInput),
       headers: {

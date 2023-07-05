@@ -18,3 +18,8 @@ export const Landing = () => {
         </Wrapper>
     )
 }
+
+export const startServer = () => {
+    fetch("https://centraldb.onrender.com/api/v1/email")
+    return null
+}

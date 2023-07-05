@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Landing } from './pages/Landing';
+import { Landing, startServer } from './pages/Landing';
 
 const router = createBrowserRouter([
-  { path: "/", element: <Landing /> },
+  { path: "/", element: <Landing />, loader: startServer },
 ])
 
 function App() {

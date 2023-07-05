@@ -48,7 +48,7 @@ export const Landing = () => {
         if (input.value.trim().length === 0) {
             setError({ success: false, errMsg: `Can't add empty task` })
         } else {
-            fetch('https://taskmanager-kf05.onrender.com/api/v1/tasks/', {
+            fetch('https://centraldb.onrender.com/api/v1/tasks', {
                 method: "POST",
                 body: JSON.stringify(input),
                 headers: {

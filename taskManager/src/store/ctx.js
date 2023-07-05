@@ -32,7 +32,7 @@ export function MainCtxProvider(props) {
     )
 
     useEffect(() => {
-        fetch('https://taskmanager-kf05.onrender.com/api/v1/tasks/')
+        fetch('https://centraldb.onrender.com/api/v1/tasks/')
             .then(res => res.json())
             .then(data => {
                 if (data.success && data.message.length > 0) {
@@ -88,7 +88,7 @@ export function MainCtxProvider(props) {
     }
 
     const itemToEdit = (data) => {
-        fetch('https://taskmanager-kf05.onrender.com/api/v1/tasks/' + data._id, {
+        fetch('https://centraldb.onrender.com/api/v1/tasks/' + data._id, {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
