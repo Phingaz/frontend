@@ -8,7 +8,13 @@ body {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     padding: 36px;
+    border: 1px solid red;
 }
 
 .header {
@@ -52,6 +58,7 @@ main {
 .form--button {
     grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
     border-radius: 5px;
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
     color: white;
@@ -64,7 +71,7 @@ main {
 }
 
 .meme--image {
-    max-width: 100%;
+    width: 100%;
     border-radius: 3px;
 }
 

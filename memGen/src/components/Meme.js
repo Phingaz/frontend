@@ -1,17 +1,18 @@
 import React from "react"
-import memesData from "../data/memesData"
+import { memesData } from "../data/memesData"
 
 export default function Meme() {
-    
+
     const [meme, setMeme] = React.useState({
         topText: "Top Text",
         bottomText: "Bottom Text",
-        randomImage: "http://i.imgflip.com/1bij.jpg" 
+        randomImage: "http://i.imgflip.com/1bij.jpg"
     })
-    
+
+    // eslint-disable-next-line
     const [allMemeImages, setAllMemeImages] = React.useState(memesData)
-    
-    
+
+
     function getMemeImage() {
         const memesArray = allMemeImages.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
@@ -20,9 +21,9 @@ export default function Meme() {
             ...prevMeme,
             randomImage: url
         }))
-        
+
     }
-    
+
     function handleChange(e) {
         setMeme(prevMeme => {
             return {
@@ -31,11 +32,11 @@ export default function Meme() {
             }
         })
     }
-    
+
     return (
         <main>
             <div className="form">
-                <input 
+                <input
                     type="text"
                     placeholder="Top text"
                     className="form--input"
@@ -43,7 +44,7 @@ export default function Meme() {
                     value={meme.topText}
                     onChange={handleChange}
                 />
-                <input 
+                <input
                     type="text"
                     placeholder="Bottom text"
                     className="form--input"
@@ -51,7 +52,7 @@ export default function Meme() {
                     value={meme.bottomText}
                     onChange={handleChange}
                 />
-                <button 
+                <button
                     className="form--button"
                     onClick={getMemeImage}
                 >
@@ -59,7 +60,9 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
+                <img src={meme.randomImage}
+                    alt="random_meme_img"
+                    className="meme--image" />
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
