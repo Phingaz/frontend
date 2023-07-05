@@ -4,8 +4,32 @@ import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
 import AddLocationAltRoundedIcon from '@mui/icons-material/AddLocationAltRounded';
 import MarkEmailReadRoundedIcon from '@mui/icons-material/MarkEmailReadRounded';
 import PhoneInTalkRoundedIcon from '@mui/icons-material/PhoneInTalkRounded';
+import { useRef, useState } from "react";
 
 export const ContactMe = () => {
+
+  const input = useRef()
+
+  const [error, setError] = useState({})
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formInput = { email: input.current.value }
+    fetch(`http://localhost:5000/api/v1/email`, {
+      method: "POST",
+      body: JSON.stringify(formInput),
+      headers: {
+        "Content-type": "application/json"
+      }
+    })
+      .then(data => data.json())
+      .then(res => {
+        setError(res)
+        input.current.value = ""
+      })
+      .catch(error => setError(error))
+  }
+
   return (
     <div id="contact" className={styled.contact}>
       <div className={styled.container}>
@@ -23,10 +47,11 @@ export const ContactMe = () => {
                 />
               </h2>
             </Reveal>
-           <Reveal delay={0.4}>
-              <form >
+            <Reveal delay={0.4}>
+              <form onSubmit={handleSubmit}>
                 <div className={styled.email}>
                   <input
+                    ref={input}
                     type="email"
                     required
                   />
@@ -34,7 +59,12 @@ export const ContactMe = () => {
                 </div>
                 <button>Contact me Prosper</button>
               </form>
-           </Reveal>
+            </Reveal>
+                {
+                  error.message
+                  &&
+                  <p className={`${error.success ? styled.success : styled.error}`}>{error.message}</p>
+                }
           </div>
 
           <div className={styled.footer} >
