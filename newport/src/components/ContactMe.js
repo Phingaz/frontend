@@ -10,7 +10,7 @@ export const ContactMe = () => {
     <div id="contact" className={styled.contact}>
       <div className={styled.container}>
         <FadeIn delay={0.2}>
-          <h1>ContactMe<span>.</span> <hr /></h1>
+          <h1>Contact Me<span>.</span> <hr /></h1>
         </FadeIn>
 
         <div className={styled.section}>
@@ -64,7 +64,7 @@ export const ContactMe = () => {
                 <PhoneInTalkRoundedIcon />
                 <h4>Phone</h4>
                 <hr />
-                <a href="tel:" target="blank">
+                <a href="tel:+5511951413228" target="blank">
                   <p>+55 (11) 95141 - 3228</p>
                 </a>
               </div>
