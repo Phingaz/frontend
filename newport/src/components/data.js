@@ -8,6 +8,7 @@ import weather from "../assets/img/weather.png"
 import pimcalc from "../assets/img/pimcalc.png"
 import taskmanager from "../assets/img/taskmanager.png"
 import utility from "../assets/img/utility.png"
+import memgen from "../assets/img/memgen.png"
 
 const techs = [
     {
@@ -190,7 +191,7 @@ const project = [
         img: utility,
         alt: "utility",
         name: "Utility App",
-        link: "http://piiutility.netlify.app",
+        link: "http://piiutilities.netlify.app",
         techStack: "React - Css - Api",
         about: "A simple utility app where you can shorten url links, generate qrcodes and generate random users. More features to come"
     },
@@ -214,10 +215,10 @@ const project = [
     },
     {
         id: 8,
-        img: scandi,
-        alt: "scandi",
+        img: memgen,
+        alt: "memgen",
         name: "Meme Generator",
-        link: "http://piiscandiweb.netlify.app",
+        link: "http://piimemgen.netlify.app",
         techStack: "React - Css",
         about: "Meme generator app"
     },
@@ -226,7 +227,7 @@ const project = [
         img: dice,
         alt: "dice",
         name: "Dice Game",
-        link: "http://piidice.netlify.app",
+        link: "http://piidicegame.netlify.app",
         techStack: "Html - Css - Javascript",
         about: "A simple dice game"
     },
@@ -235,7 +236,7 @@ const project = [
         img: pig,
         alt: "pig",
         name: "Pig Game",
-        link: "http://piipig.netlify.app",
+        link: "http://piipiggame.netlify.app",
         techStack: "React - Css",
         about: "A simple game"
     },
@@ -244,7 +245,7 @@ const project = [
         img: number,
         alt: "number",
         name: "Number Guessing Game",
-        link: "http://piinumber.netlify.app",
+        link: "http://piiguessinggame.netlify.app",
         techStack: "React - Css",
         about: "A simple guessing game"
     },
