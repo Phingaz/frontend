@@ -41,7 +41,7 @@ export const Home = () => {
                     <a className={styled.icons_item} href="https://www.linkedin.com/in/piinoya/" target="blank">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a className={styled.icons_item} href="https://piicv.netlify.app" target="blank">
+                    <a className={styled.icons_item} href="https://piiv1.netlify.app" target="blank">
                         <i className="fa-solid fa-briefcase"></i ></a>
                     <a className={styled.icons_item} href="https://github.com/Phingaz?tab=repositories" target="blank">
                         <i className="fab fa-github"></i></a>

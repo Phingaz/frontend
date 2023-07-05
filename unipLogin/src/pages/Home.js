@@ -47,6 +47,6 @@ function Home() {
 export default Home
 
 export const startServer = () => {
-  fetch("https://unip-f48p.onrender.com")
+  fetch("https://centraldb.onrender.com/api/v1/unip/")
   return null
 }

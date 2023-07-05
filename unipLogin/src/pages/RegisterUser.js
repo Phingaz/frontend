@@ -35,7 +35,7 @@ export default function RegisterUser() {
       },
       body: JSON.stringify(user)
     }
-    const res = await fetch("https://unip-f48p.onrender.com/register", header)
+    const res = await fetch("https://centraldb.onrender.com/api/v1/unip/register", header)
     return res
   }
 
@@ -159,7 +159,6 @@ export default function RegisterUser() {
           name="cpf"
           onChange={handleChange}
           placeholder="123.456.789-00"
-          pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
           value={user.cpf}
 
         />
