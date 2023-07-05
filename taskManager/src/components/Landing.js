@@ -27,7 +27,7 @@ export const Landing = () => {
         if (id === 1 || id === 2) {
             lists.delItem(id)
         } else {
-            fetch('https://taskmanager-kf05.onrender.com/api/v1/tasks/' + id, {
+            fetch('https://centraldb.onrender.com/api/v1/tasks/' + id, {
                 method: "DELETE",
             })
                 .then(res => res.json())
