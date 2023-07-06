@@ -174,7 +174,7 @@ const project = [
         alt: "taskmanager",
         name: "My Task Manager App",
         link: "http://piitask.netlify.app",
-        techStack: "React - CSS - Express - MongoDb - Mongoose - NodeJs",
+        techStack: "React - CSS - Material Ui - Express - MongoDb - Mongoose - NodeJs",
         about: "My first project after learning react, styled and personalized to keep tract of what projects to work on, more features to come :)"
     },
     {
