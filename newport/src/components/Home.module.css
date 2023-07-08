@@ -23,7 +23,7 @@
 
 .name h1 {
     letter-spacing: 5px;
-    font-size: 6rem;
+    font-size: clamp(5rem 6rem 6rem);
 }
 
 .highlight {
